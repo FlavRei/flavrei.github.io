@@ -25,6 +25,8 @@ L'ensemble du projet offre une solution complète en MLOps, permettant non seule
 L'application front-end est accessible publiquement ici :  
 https://wine-quality-prediction-app-732582219557.europe-west1.run.app/
 
+___
+
 ### Cereals Price Prediction
 
 ![Cereals Price Prediction](/assets/img/cereals-price-prediction.png)
@@ -40,6 +42,8 @@ Pour utiliser l'application, j'ai développé l'interface avec Streamlit. J'ai e
 L'application est disponible à l'adresse suivante :  
 https://cereals-dashboard-258413365847.europe-west1.run.app
 
+___
+
 ### Music Finder
 
 ![Music Finder](/assets/img/music-finder.png) 
@@ -53,7 +57,9 @@ Pour définir le critère d'émotion, j'ai utilisé la méthode KMeans pour form
 Pour utiliser le modèle, j'ai développé une application Streamlit que déployée sur Render.  
 
 L'application est disponible à l'adresse suivante :  
-https://flavrei-music-finder.streamlit.app/     
+https://flavrei-music-finder.streamlit.app/
+
+___
 
 ### Music Classifier
 
@@ -68,7 +74,7 @@ Les 3 modèles développés étaient le LSTM, GRU et le CNN.
 J'ai ensuite entraîné ces modèles pour comparer les performances. Le modèle CNN était celui offrant de meilleurs résultats et donc c'est celui qui a été conservé pour développer l'application.  
 
 L'application est disponible à l'adresse suivante :  
-https://flavrei-music-classifier.streamlit.app/   
+https://flavrei-music-classifier.streamlit.app/
 
 # Conclusion
 La réalisation de ces applications m'a permis d'apprendre d'une part à développer des projets de Data Science de A à Z, allant de la sélection d'un dataset à son nettoyage, en passant par l'analyse des données et de leur transformation. 
