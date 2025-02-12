@@ -2,6 +2,26 @@
 Voici mon Portfolio contenant mes projets de Data Engineering / Data Science réalisés sur mon temps personnel. Les sujets de ces projets sont inspirés de domaines qui me concernent et avaient pour objectif de m'apprendre et m'entraîner à utiliser les différents modèles incontournables en Data Science et surtout à savoir développer une application et la déployer dans le Cloud.
 
 # Projets
+### Wine Quality Prediction
+L'objectif de ce projet est de proposer une application permettant de prédire la qualité du vin à partir de ses caractéristiques physico-chimiques. 
+
+Ce projet couvre l'intégralité du cycle de développement et de mise en production d'une solution de machine learning, en passant de la collecte des données jusqu'au déploiement et à la surveillance en production.
+
+L'application est développée avec Streamlit. Elle permet de régler les paramètres du vin via des curseurs afin d'obtenir une prédiction en temps réel. L'application repose sur une API développée avec FastAPI. Celle-ci charge un modèle RandomForest pré-entraîné pour prédire la qualité du vin en fonction des caractéristiques choisies.
+
+Un DAG Airflow orchestre l'ingestion des données, l'entraînement du modèle et son évaluation avec suivi via MLflow. DVC est utilisé pour versionner les données et le modèle, garantissant ainsi la reproductibilité.
+
+L'ensemble de l'infrastructure (Compute Engine, règles de firewall, Artifact Registry, et Cloud Run pour le front-end) est provisionné via Terraform. Une chaîne CI/CD automatisée avec GitHub Actions gère le linting, les tests, la construction des images Docker et leur déploiement sur Google Cloud Platform.
+
+Le projet inclut des outils de monitoring, comme Evidently pour détecter le drift du modèle et Prometheus/Grafana pour visualiser les métriques d'application en temps réel.
+
+L'ensemble du projet offre une solution complète en MLOps, permettant non seulement d'obtenir des prédictions de qualité de vin, mais également de démontrer une maîtrise des pratiques d'automatisation et de déploiement dans le Cloud.
+
+L'application front-end est accessible publiquement ici :
+https://wine-quality-prediction-app-732582219557.europe-west1.run.app/
+
+![Wine Quality Prediction](/assets/img/wine-quality-prediction.png)
+
 ### Cereals Price Prediction
 L'objectif de ce projet est de proposer une application permettant d'avoir un aperçu de l'évolution du prix des céréales sur les années passées et également d'estimer une prédiction du prix des céréales dans les années futures.
 
